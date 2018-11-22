@@ -16,7 +16,7 @@
 /**
  *
  Waypoints - 3.0.0
- Copyright © 2011-2014 Caleb Troughton
+ Copyright Â© 2011-2014 Caleb Troughton
  Licensed under the MIT license.
  https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
  */
@@ -26,7 +26,7 @@
 /**
  *
  * Waypoints Inview Shortcut - 3.0.0
- * Copyright © 2011-2014 Caleb Troughton
+ * Copyright Â© 2011-2014 Caleb Troughton
  * Licensed under the MIT license.
  * https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
  *
