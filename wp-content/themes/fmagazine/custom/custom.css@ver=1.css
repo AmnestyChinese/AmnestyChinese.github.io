@@ -23985,25 +23985,22 @@ x:-o-prefocus {
     background: #000;
     padding: 0.4em 0.7em;
 }
-}
-
-/* append style */
-#menu-item-5029, #menu-item-1385 {
-    display: none;
+}#menu-item-5029, #menu-item-1385 {
+	display: none;
 }
 #menu-amnesty-main-menu-1 .menu-item-5029,
 .tn-mobile-menu-search {
-    display: none;
+	display: none;
 }
 
 @media only screen and (max-width: 479px) {
-    .amnesty_cookie_body {
-        padding: 10px 5px;
-    }
-    .amnesty_cookie_text {
-        line-height: normal;
-    }
-    .amnesty_cookie_float #amnesty_cookie_confirm {
-        margin-top: 8px;
-    }
+	.amnesty_cookie_body {
+		padding: 10px 5px;
+	}
+	.amnesty_cookie_text {
+		line-height: normal;
+	}
+	.amnesty_cookie_float #amnesty_cookie_confirm {
+		margin-top: 8px;
+	}
 }
