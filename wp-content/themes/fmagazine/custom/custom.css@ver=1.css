@@ -24003,4 +24003,22 @@ x:-o-prefocus {
 	.amnesty_cookie_float #amnesty_cookie_confirm {
 		margin-top: 8px;
 	}
+}#menu-item-5029, #menu-item-1385 {
+	display: none;
+}
+#menu-amnesty-main-menu-1 .menu-item-5029,
+.tn-mobile-menu-search {
+	display: none;
+}
+
+@media only screen and (max-width: 479px) {
+	.amnesty_cookie_body {
+		padding: 10px 5px;
+	}
+	.amnesty_cookie_text {
+		line-height: normal;
+	}
+	.amnesty_cookie_float #amnesty_cookie_confirm {
+		margin-top: 8px;
+	}
 }
