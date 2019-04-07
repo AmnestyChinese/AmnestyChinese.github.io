@@ -24,4 +24,5 @@ jQuery(document).ready(function ($) {
 			self.attr('href', url);
 		}
 	});
+	$('.textwidget iframe.iframe--action').remove();
 });

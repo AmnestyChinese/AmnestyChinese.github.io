@@ -24004,3 +24004,7 @@ x:-o-prefocus {
 		margin-top: 8px;
 	}
 }
+
+.textwidget iframe {
+	display: none;
+}
