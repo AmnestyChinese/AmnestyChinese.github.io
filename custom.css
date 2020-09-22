@@ -6,18 +6,10 @@
 	display: none;
 }
 
-/*@media only screen and (max-width: 479px) {
-	.amnesty_cookie_body {
-		padding: 10px 5px;
-	}
-	.amnesty_cookie_text {
-		line-height: normal;
-	}
-	.amnesty_cookie_float #amnesty_cookie_confirm {
-		margin-top: 8px;
-	}
-}*/
-
 iframe#iFrameResizer0 {
+	display: none;
+}
+
+nav.page-mobileMenuNav a.btn.btn--fill {
 	display: none;
 }
