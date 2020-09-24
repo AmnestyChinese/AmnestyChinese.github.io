@@ -13,3 +13,16 @@ iframe#iFrameResizer0 {
 nav.page-mobileMenuNav a.btn.btn--fill {
 	display: none;
 }
+
+.page-headerSearchContainer {
+	display: none;
+}
+
+aside.article-shareContainer {
+	display: none;
+}
+
+aside.news-sidebar.section.section--small,
+select#sort-by {
+	display: none;
+}
