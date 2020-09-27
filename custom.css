@@ -23,6 +23,7 @@ aside.article-shareContainer {
 }
 
 aside.news-sidebar.section.section--small,
-select#sort-by {
+select#sort-by,
+.postlist-sort {
 	display: none;
 }
