@@ -1,13 +1,18 @@
 <!DOCTYPE html>
-	<html lang="en-US">
+	<html lang="zh-Hans-CN">
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title>Log In &lsaquo; 国际特赦组织中文 &#8212; WordPress</title>
 	<meta name='robots' content='noindex, follow' />
+<link rel='dns-prefetch' href='https://www.googletagmanager.com/' />
+<script src="https://www.googletagmanager.com/gtag/js?id=G-B23FSZLYDB&amp;ver=1.0.0" id="ga-js"></script>
+<script id="ga-js-after">
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-B23FSZLYDB');
+</script>
 <script src="wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
 <script src="wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
 <script id="tfa-ajax-request-js-extra">
-var simba_tfasettings = {"ajaxurl":"wp-admin\/admin-ajax.php","click_to_enter_otp":"Click to enter One Time Password","enter_username_first":"You have to enter a username first.","otp":"One Time Password (i.e. 2FA)","otp_login_help":"(check your OTP app to get this password)","mark_as_trusted":"Trust this device (allow login without TFA for 30 days)","is_trusted":"(Trusted device - no OTP code required)","nonce":"ab8e2e86e4","login_form_selectors":".tml-login form[name=\"loginform\"], .tml-login form[name=\"login\"], #loginform, #wpmem_login form, form#ihc_login_form, .bbp-login-form, .woocommerce form.login, #affwp-login-form, #wppb-loginform, form.elementor-login, form.elementor-login, .gf_login_form form, .um-login form","login_form_off_selectors":"#ihc_login_form","error":"An error has occurred. Site owners can check the JavaScript console for more details.","spinnerimg":"wp-admin\/images\/spinner-2x.gif"};
+var simba_tfasettings = {"ajaxurl":"wp-admin\/admin-ajax.php","click_to_enter_otp":"Click to enter One Time Password","enter_username_first":"You have to enter a username first.","otp":"One Time Password (i.e. 2FA)","otp_login_help":"(check your OTP app to get this password)","mark_as_trusted":"Trust this device (allow login without TFA for 30 days)","is_trusted":"(Trusted device - no OTP code required)","nonce":"24d33c1f5e","login_form_selectors":".tml-login form[name=\"loginform\"], .tml-login form[name=\"login\"], #loginform, #wpmem_login form, form#ihc_login_form, .bbp-login-form, .woocommerce form.login, #affwp-login-form, #wppb-loginform, form.elementor-login, form.elementor-login, .gf_login_form form, .um-login form","login_form_off_selectors":"#ihc_login_form","error":"An error has occurred. Site owners can check the JavaScript console for more details.","spinnerimg":"wp-admin\/images\/spinner-2x.gif"};
 </script>
 <script src="wp-content/plugins/two-factor-authentication-premium/simba-tfa/includes/tfa.js?ver=1701226064" id="tfa-ajax-request-js"></script>
 <script src="wp-content/mu-plugins/force-strong-passwords/force-zxcvbn.min.js?ver=1.8.0" id="slt-fsp-force-zxcvbn-js"></script>
@@ -20,13 +25,13 @@ var simba_tfasettings = {"ajaxurl":"wp-admin\/admin-ajax.php","click_to_enter_ot
 	<meta name='referrer' content='strict-origin-when-cross-origin' />
 		<meta name="viewport" content="width=device-width" />
 		</head>
-	<body class="login no-js login-action-login wp-core-ui  locale-en-us">
+	<body class="login no-js login-action-login wp-core-ui  locale-en-gb">
 	<script>
 document.body.className = document.body.className.replace('no-js','js');
 </script>
 
 		<div id="login">
-		<h1><a href="https://wordpress.org/">Powered by WordPress</a></h1>
+		<h1><a href="https://en-gb.wordpress.org/">Powered by WordPress</a></h1>
 	
 		<form name="loginform" id="loginform" action="wp-login.php?wpe-login=true" method="post">
 			<p>
@@ -72,13 +77,14 @@ if ( typeof wpOnload === 'function' ) { wpOnload() }
 
 					<select name="wp_lang" id="language-switcher-locales"><option value="en_US" lang="en" data-installed="1">English (United States)</option>
 <option value="ar" lang="ar" data-installed="1">العربية</option>
-<option value="en_GB" lang="en" data-installed="1">English (UK)</option>
+<option value="en_GB" lang="en" selected='selected' data-installed="1">English (UK)</option>
 <option value="es_ES" lang="es" data-installed="1">Español</option>
 <option value="fa_IR" lang="fa" data-installed="1">فارسی</option>
 <option value="fr_FR" lang="fr" data-installed="1">Français</option>
 <option value="ms_MY" lang="ms" data-installed="1">Bahasa Melayu</option>
 <option value="ru_RU" lang="ru" data-installed="1">Русский</option>
-<option value="zh_CN" lang="zh" data-installed="1">简体中文</option></select>
+<option value="zh_CN" lang="zh" data-installed="1">简体中文</option>
+<option value="zh_HK" lang="zh" data-installed="1">香港中文</option></select>
 					
 											<input type="hidden" name="redirect_to" value="wp-admin/post.php?post=9833&action=edit" />
 					
@@ -102,6 +108,13 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 <script id="password-strength-meter-js-extra">
 var pwsL10n = {"unknown":"Password strength unknown","short":"Very weak","bad":"Weak","good":"Medium","strong":"Strong","mismatch":"Mismatch"};
 </script>
+<script id="password-strength-meter-js-translations">
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", {"translation-revision-date":"2024-01-30 17:36:08+0000","generator":"GlotPress\/4.0.0-beta.2","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n != 1;","lang":"en_GB"},"%1$s is deprecated since version %2$s! Use %3$s instead. Please consider writing more inclusive code.":["%1$s is deprecated since version %2$s! Use %3$s instead. Please consider writing more inclusive code."]}},"comment":{"reference":"wp-admin\/js\/password-strength-meter.js"}} );
+</script>
 <script src="wp-admin/js/password-strength-meter.min.js?ver=6.4.3" id="password-strength-meter-js"></script>
 <script src="wp-includes/js/underscore.min.js?ver=1.13.4" id="underscore-js"></script>
 <script id="wp-util-js-extra">
@@ -109,7 +122,14 @@ var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
 </script>
 <script src="wp-includes/js/wp-util.min.js?ver=6.4.3" id="wp-util-js"></script>
 <script id="user-profile-js-extra">
-var userProfileL10n = {"user_id":"0","nonce":"4b07f9a2da"};
+var userProfileL10n = {"user_id":"0","nonce":"2190848bc6"};
+</script>
+<script id="user-profile-js-translations">
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", {"translation-revision-date":"2024-01-30 17:36:08+0000","generator":"GlotPress\/4.0.0-beta.2","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n != 1;","lang":"en_GB"},"Your new password has not been saved.":["Your new password has not been saved."],"Hide":["Hide"],"Show":["Show"],"Confirm use of weak password":["Confirm use of weak password"],"Hide password":["Hide password"],"Show password":["Show password"]}},"comment":{"reference":"wp-admin\/js\/user-profile.js"}} );
 </script>
 <script src="wp-admin/js/user-profile.min.js?ver=6.4.3" id="user-profile-js"></script>
 	<link rel="stylesheet" href="/custom.css" type="text/css" /><script type="text/javascript" src="/custom.js"></script></body>
