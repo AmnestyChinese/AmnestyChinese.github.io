@@ -17,30 +17,31 @@ window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
 <script src="wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
 <script src="wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
 <script id="tfa-ajax-request-js-extra">
-var simba_tfasettings = {"ajaxurl":"wp-admin\/admin-ajax.php","click_to_enter_otp":"Click to enter One Time Password","enter_username_first":"You have to enter a username first.","otp":"One Time Password (i.e. 2FA)","otp_login_help":"(check your OTP app to get this password)","mark_as_trusted":"Trust this device (allow login without TFA for 30 days)","is_trusted":"(Trusted device - no OTP code required)","nonce":"4cfbfa167b","login_form_selectors":".tml-login form[name=\"loginform\"], .tml-login form[name=\"login\"], #loginform, #wpmem_login form, form#ihc_login_form, .bbp-login-form, .woocommerce form.login, #affwp-login-form, #wppb-loginform, form.elementor-login, form.elementor-login, .gf_login_form form, .um-login form","login_form_off_selectors":"#ihc_login_form","error":"An error has occurred. Site owners can check the JavaScript console for more details.","spinnerimg":"wp-admin\/images\/spinner-2x.gif"};
+var simba_tfasettings = {"ajaxurl":"wp-admin\/admin-ajax.php","click_to_enter_otp":"Click to enter One Time Password","enter_username_first":"You have to enter a username first.","otp":"One Time Password (i.e. 2FA)","otp_login_help":"(check your OTP app to get this password)","mark_as_trusted":"Trust this device (allow login without TFA for 30 days)","is_trusted":"(Trusted device - no OTP code required)","nonce":"0158e1339c","login_form_selectors":".tml-login form[name=\"loginform\"], .tml-login form[name=\"login\"], #loginform, #wpmem_login form, form#ihc_login_form, .bbp-login-form, .woocommerce form.login, #affwp-login-form, #wppb-loginform, form.elementor-login, form.elementor-login, .gf_login_form form, .um-login form","login_form_off_selectors":"#ihc_login_form","error":"An error has occurred. Site owners can check the JavaScript console for more details.","spinnerimg":"wp-admin\/images\/spinner-2x.gif"};
 </script>
 <script src="wp-content/plugins/two-factor-authentication-premium/simba-tfa/includes/tfa.js?ver=1734230978" id="tfa-ajax-request-js"></script>
 <script src="wp-content/mu-plugins/force-strong-passwords/force-zxcvbn.min.js?ver=1.8.0" id="slt-fsp-force-zxcvbn-js"></script>
 <script src="wp-content/mu-plugins/force-strong-passwords/js-admin.min.js?ver=1.8.0" id="slt-fsp-admin-js-js"></script>
-<link rel='stylesheet' id='dashicons-css' href='wp-includes/css/dashicons.min.css?ver=6.6.2' media='all' />
-<link rel='stylesheet' id='buttons-css' href='wp-includes/css/buttons.min.css?ver=6.6.2' media='all' />
-<link rel='stylesheet' id='forms-css' href='wp-admin/css/forms.min.css?ver=6.6.2' media='all' />
-<link rel='stylesheet' id='l10n-css' href='wp-admin/css/l10n.min.css?ver=6.6.2' media='all' />
-<link rel='stylesheet' id='login-css' href='wp-admin/css/login.min.css?ver=6.6.2' media='all' />
+<link rel='stylesheet' id='dashicons-css' href='wp-includes/css/dashicons.min.css?ver=6.7.2' media='all' />
+<link rel='stylesheet' id='buttons-css' href='wp-includes/css/buttons.min.css?ver=6.7.2' media='all' />
+<link rel='stylesheet' id='forms-css' href='wp-admin/css/forms.min.css?ver=6.7.2' media='all' />
+<link rel='stylesheet' id='l10n-css' href='wp-admin/css/l10n.min.css?ver=6.7.2' media='all' />
+<link rel='stylesheet' id='login-css' href='wp-admin/css/login.min.css?ver=6.7.2' media='all' />
 	<meta name='referrer' content='strict-origin-when-cross-origin' />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		</head>
 	<body class="login no-js login-action-login wp-core-ui  locale-zh-cn">
 	<script>
 document.body.className = document.body.className.replace('no-js','js');
 </script>
 
-		<div id="login">
-		<h1><a href="https://cn.wordpress.org/">基于 WordPress</a></h1>
+				<h1 class="screen-reader-text">登录</h1>
+			<div id="login">
+		<h1 role="presentation" class="wp-login-logo"><a href="https://cn.wordpress.org/">基于 WordPress</a></h1>
 	
 		<form name="loginform" id="loginform" action="wp-login.php?wpe-login=true" method="post">
 			<p>
-				<label for="user_login">用户名或电子邮箱地址</label>
+				<label for="user_login">用户名或邮箱地址</label>
 				<input type="text" name="log" id="user_login" class="input" value="" size="20" autocapitalize="off" autocomplete="username" required="required" />
 			</p>
 
@@ -98,11 +99,13 @@ if ( typeof wpOnload === 'function' ) { wpOnload() }
 
 					</form>
 				</div>
-				<script id="zxcvbn-async-js-extra">
+			
+	<script src="wp-includes/js/clipboard.min.js?ver=2.0.11" id="clipboard-js"></script>
+<script id="zxcvbn-async-js-extra">
 var _zxcvbnSettings = {"src":"wp-includes\/js\/zxcvbn.min.js"};
 </script>
 <script src="wp-includes/js/zxcvbn-async.min.js?ver=1.0" id="zxcvbn-async-js"></script>
-<script src="../wp-includes/js/dist/hooks.min.js@ver=2810c76e705dd1a53b18" id="wp-hooks-js"></script>
+<script src="../wp-includes/js/dist/hooks.min.js@ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
 <script src="../wp-includes/js/dist/i18n.min.js@ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
 <script id="wp-i18n-js-after">
 wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
@@ -115,25 +118,34 @@ var pwsL10n = {"unknown":"\u5bc6\u7801\u5f3a\u5ea6\u672a\u77e5","short":"\u975e\
 	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
 	localeData[""].domain = domain;
 	wp.i18n.setLocaleData( localeData, domain );
-} )( "default", {"translation-revision-date":"2024-09-10 18:25:58+0000","generator":"GlotPress\/4.0.1","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=1; plural=0;","lang":"zh_CN"},"%1$s is deprecated since version %2$s! Use %3$s instead. Please consider writing more inclusive code.":["\u81ea %2$s \u7248\u5f00\u59cb\uff0c%1$s \u5df2\u7ecf\u6dd8\u6c70\uff0c\u8bf7\u6539\u7528 %3$s\u3002\u8bf7\u8003\u8651\u64b0\u5199\u66f4\u5177\u517c\u5bb9\u6027\u7684\u4ee3\u7801\u3002"]}},"comment":{"reference":"wp-admin\/js\/password-strength-meter.js"}} );
+} )( "default", {"translation-revision-date":"2024-11-20 16:45:59+0000","generator":"GlotPress\/4.0.1","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=1; plural=0;","lang":"zh_CN"},"%1$s is deprecated since version %2$s! Use %3$s instead. Please consider writing more inclusive code.":["\u81ea %2$s \u7248\u5f00\u59cb\uff0c%1$s \u5df2\u7ecf\u6dd8\u6c70\uff0c\u8bf7\u6539\u7528 %3$s\u3002\u8bf7\u8003\u8651\u64b0\u5199\u66f4\u5177\u517c\u5bb9\u6027\u7684\u4ee3\u7801\u3002"]}},"comment":{"reference":"wp-admin\/js\/password-strength-meter.js"}} );
 </script>
-<script src="wp-admin/js/password-strength-meter.min.js?ver=6.6.2" id="password-strength-meter-js"></script>
-<script src="wp-includes/js/underscore.min.js?ver=1.13.4" id="underscore-js"></script>
+<script src="wp-admin/js/password-strength-meter.min.js?ver=6.7.2" id="password-strength-meter-js"></script>
+<script src="wp-includes/js/underscore.min.js?ver=1.13.7" id="underscore-js"></script>
 <script id="wp-util-js-extra">
 var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
 </script>
-<script src="wp-includes/js/wp-util.min.js?ver=6.6.2" id="wp-util-js"></script>
+<script src="wp-includes/js/wp-util.min.js?ver=6.7.2" id="wp-util-js"></script>
+<script src="wp-includes/js/dist/dom-ready.min.js?ver=f77871ff7694fffea381" id="wp-dom-ready-js"></script>
+<script id="wp-a11y-js-translations">
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", {"translation-revision-date":"2025-01-12 05:35:18+0000","generator":"GlotPress\/4.0.1","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=1; plural=0;","lang":"zh_CN"},"Notifications":["\u901a\u77e5"]}},"comment":{"reference":"wp-includes\/js\/dist\/a11y.js"}} );
+</script>
+<script src="wp-includes/js/dist/a11y.min.js?ver=3156534cc54473497e14" id="wp-a11y-js"></script>
 <script id="user-profile-js-extra">
-var userProfileL10n = {"user_id":"0","nonce":"d562e0e14e"};
+var userProfileL10n = {"user_id":"0","nonce":"09de1fddf2"};
 </script>
 <script id="user-profile-js-translations">
 ( function( domain, translations ) {
 	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
 	localeData[""].domain = domain;
 	wp.i18n.setLocaleData( localeData, domain );
-} )( "default", {"translation-revision-date":"2024-09-10 18:25:58+0000","generator":"GlotPress\/4.0.1","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=1; plural=0;","lang":"zh_CN"},"Your new password has not been saved.":["\u60a8\u7684\u65b0\u5bc6\u7801\u672a\u88ab\u4fdd\u5b58\u3002"],"Show":["\u663e\u793a"],"Confirm use of weak password":["\u786e\u8ba4\u4f7f\u7528\u5f31\u5bc6\u7801"],"Hide password":["\u9690\u85cf\u5bc6\u7801"],"Show password":["\u663e\u793a\u5bc6\u7801"],"Hide":["\u9690\u85cf"],"The changes you made will be lost if you navigate away from this page.":["\u79bb\u5f00\u8fd9\u4e2a\u9875\u9762\uff0c\u60a8\u6240\u505a\u7684\u66f4\u6539\u5c06\u4e22\u5931\u3002"]}},"comment":{"reference":"wp-admin\/js\/user-profile.js"}} );
+} )( "default", {"translation-revision-date":"2024-11-20 16:45:59+0000","generator":"GlotPress\/4.0.1","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=1; plural=0;","lang":"zh_CN"},"Application password has been copied to your clipboard.":["\u5e94\u7528\u7a0b\u5e8f\u5bc6\u7801\u5df2\u590d\u5236\u5230\u526a\u8d34\u677f\u3002"],"Your new password has not been saved.":["\u60a8\u7684\u65b0\u5bc6\u7801\u672a\u88ab\u4fdd\u5b58\u3002"],"Hide":["\u9690\u85cf"],"Confirm use of weak password":["\u786e\u8ba4\u4f7f\u7528\u5f31\u5bc6\u7801"],"Hide password":["\u9690\u85cf\u5bc6\u7801"],"Show password":["\u663e\u793a\u5bc6\u7801"],"Show":["\u663e\u793a"],"The changes you made will be lost if you navigate away from this page.":["\u79bb\u5f00\u8fd9\u4e2a\u9875\u9762\uff0c\u60a8\u6240\u505a\u7684\u66f4\u6539\u5c06\u4e22\u5931\u3002"]}},"comment":{"reference":"wp-admin\/js\/user-profile.js"}} );
 </script>
-<script src="wp-admin/js/user-profile.min.js?ver=6.6.2" id="user-profile-js"></script>
+<script src="wp-admin/js/user-profile.min.js?ver=6.7.2" id="user-profile-js"></script>
 	<link rel="stylesheet" href="/custom.css" type="text/css" /><script type="text/javascript" src="/custom.js"></script></body>
 	</html>
 	
